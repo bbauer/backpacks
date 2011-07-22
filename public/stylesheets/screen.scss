@@ -1,0 +1,185 @@
+
+/* ---------------[  Reset  ]--------------- */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}
+p,ol,ul {list-style:none;}
+p, img {padding:0;margin:0;}
+caption,th {text-align:left;}
+q:before,q:after{content:'';}
+abbr,acronym {border:0;}
+
+/* ---------------[  Variables/Mixins  ]--------------- */
+
+$corners:12px;
+
+/* ---------------[  Global  ]--------------- */
+
+body { 
+	font-family:sans-serif; 
+	padding:0; margin:0; 
+	font-size:14px;
+	background:url(/images/ui-body-bg.jpg) no-repeat top center #196af1;
+	color:#111;
+}
+a, img { border:none; }
+a {	text-decoration:none; color:#007bb9; }
+a:hover { text-decoration:underline; }
+header, footer, aside, nav, section, article { display:block; }
+
+#wrapper { 
+	width:1009px;
+	margin:0 auto;
+}
+
+
+/* ---------------[  Header/Navigation  ]--------------- */
+
+header { 
+	height: 233px;
+	background:url(/images/ui-header-bg.jpg) no-repeat 0 0;
+	position:relative;
+	#banner {
+		width:715px;
+		height:164px;
+		background:url(/images/ui-banner-bg-white.png) no-repeat 0 0;
+		position:relative;
+		left:144px; top:92px;
+		nav {
+			position:absolute;
+			top:104px; 
+			left:13px;
+		}
+		ul {
+			width:715px;
+			padding:0;
+			margin:0;
+			list-style:none;
+		}
+		a {
+		  float:left;	
+		  display:block;
+		  font-family: 'Rokkitt', serif;
+			font-size:26px;
+			padding:10px 49px;
+			font-weight:normal;
+			color:#fff;
+		}
+		a:hover { text-decoration:none; }
+		.home { 
+			background:#ac040a; 
+			background: -webkit-gradient(linear, left top, left bottom, from(#e50008), to(#ac040a));
+		  background: -moz-linear-gradient(top, #e50008, #ac040a);
+		  text-shadow:-1px -1px 0 #730001;
+		  border-top:1px solid #930205;
+		  -webkit-border-radius:0 0 0 $corners;
+		  -moz-border-radius:0 0 0 $corners;
+		  -o-border-radius:0 0 0 $corners;
+		  border-radius:0 0 0 $corners;
+		}
+		.home:hover { background:#e50008; }
+		.facts { 
+			background:#5f9822; 
+			background: -webkit-gradient(linear, left top, left bottom, from(#73b829), to(#5f9822));
+		  background: -moz-linear-gradient(top, #73b829, #5f9822);
+		  text-shadow:-1px -1px 0 #30620c;
+		  border-top:1px solid #30620c;
+		  border-left:1px solid #a3c481;
+		  border-right:1px solid #a3c481;
+		  padding:10px 49px;
+		}
+		.facts:hover { background:#73b829; }
+		.help { 
+			background:#007bb9; 
+			background: -webkit-gradient(linear, left top, left bottom, from(#0095e1), to(#007bb9));
+		  background: -moz-linear-gradient(top, #0095e1, #007bb9);
+		  text-shadow:-1px -1px 0 #0055a9;
+		  border-top:1px solid #0055a9;
+		  border-right:1px solid #6eb4d8;
+		  padding:10px 48px 10px 49px;
+		}
+		.help:hover { background:#0095e1; }
+		.about { 
+			background:#5accec; 
+			background: -webkit-gradient(linear, left top, left bottom, from(#7a22eb), to(#431f70));
+		  background: -moz-linear-gradient(top, #7a22eb, #431f70);
+		  text-shadow:-1px -1px 0 #0d0325;
+		  border-top:1px solid #0d0325;
+		  -webkit-border-radius:0 0 $corners 0;
+		  -moz-border-radius:0 0 $corners 0;
+		  -o-border-radius:0 0 $corners 0;
+		  border-radius:0 0 $corners 0;
+		}
+		.about:hover { background:#7a22eb; }
+	}
+}
+
+
+/* ---------------[  Middle/Main-Content  ]--------------- */
+
+#middle {
+	width:953px;
+	margin-left:28px;
+	background:url(/images/ui-content-bg.png) repeat-y 0 0 #fff;
+	float:left;
+	#content {
+		width:485px;
+		float:left;
+		padding:50px 40px;
+		line-height:30px;
+		font-size:16px;
+		color:#666;
+		p {
+			margin-bottom:15px;
+		}
+		h1 {
+			font-family: 'Rokkitt', serif;
+			font-size:45px;
+			color:#005078;
+			font-weight:normal;
+			margin-bottom:25px;
+		}
+	}
+	aside {
+		width:328px;
+		float:right;
+		padding:70px 30px 40px 30px;
+		color:#666;
+		line-height:25px;
+		blockquote {
+			font-family: 'Rokkitt', serif;
+			font-size:22px;
+			color:#161616;
+			margin-bottom:20px;
+		}
+	}
+}
+
+/* ---------------[  Footer  ]--------------- */
+
+footer {  
+	width:953px;
+	margin-left:28px; 
+	padding:25px 0; 
+	text-align:center; 
+	clear:both; 
+	color:#b6f572;
+	font-weight:normal;
+	background:#6fb228;
+	-webkit-border-radius:0 0 $corners $corners;
+  -moz-border-radius:0 0 $corners $corners;
+  -o-border-radius:0 0 $corners $corners;
+  border-radius:0 0 $corners $corners;
+  p {
+	  margin:0; padding:0;
+  }
+}
+
+
+
+
+
+
+
