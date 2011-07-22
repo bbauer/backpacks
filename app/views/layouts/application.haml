@@ -1,17 +1,17 @@
 !!! 5
 %html
   %head
-    %title Brian Bauer - Web Development & Design
+    %title Backpacks in Bend - Food Donation Bend Oregon
     %link{:rel=>'stylesheet',:href=>'/stylesheets/screen.css',:media=> 'all',:type => 'text/css'}
     %link{:rel=>'stylesheet',:href=>'http://fonts.googleapis.com/css?family=Rokkitt&v2',:media=> 'all',:type => 'text/css'}
     %script{:type => "text/javascript", :src  => "http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"}
+    %script{:type => "text/javascript", :src  => "/javascripts/corners.js"}
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     :javascript
       $(document).ready(function(){
-        $('#navigation, #about').localScroll({ duration:300 });
-        $('#navigation a').click(function(){
-          $('#navigation a').removeClass("on");
-          $(this).addClass("on");
-        });
+        $('.home').corner("12px bl");
+        $('.about').corner("12px br");
+        $('footer').corner("bottom 12px");
       });	
   %body
     #wrapper

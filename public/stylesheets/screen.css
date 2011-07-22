@@ -92,6 +92,8 @@ header {
       background: #ac040a;
       background: -webkit-gradient(linear, left top, left bottom, from(#e50008), to(#ac040a));
       background: -moz-linear-gradient(top, #e50008, #ac040a);
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#e50008,endColorstr=#ac040a);
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#e50008, endColorstr=#ac040a)";
       text-shadow: -1px -1px 0 #730001;
       border-top: 1px solid #930205;
       -webkit-border-radius: 0 0 0 12px;
@@ -104,6 +106,8 @@ header {
       background: #5f9822;
       background: -webkit-gradient(linear, left top, left bottom, from(#73b829), to(#5f9822));
       background: -moz-linear-gradient(top, #73b829, #5f9822);
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#73b829,endColorstr=#5f9822);
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#73b829, endColorstr=#5f9822)";
       text-shadow: -1px -1px 0 #30620c;
       border-top: 1px solid #30620c;
       border-left: 1px solid #a3c481;
@@ -115,6 +119,8 @@ header {
       background: #007bb9;
       background: -webkit-gradient(linear, left top, left bottom, from(#0095e1), to(#007bb9));
       background: -moz-linear-gradient(top, #0095e1, #007bb9);
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#0095e1,endColorstr=#007bb9);
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#0095e1, endColorstr=#007bb9)";
       text-shadow: -1px -1px 0 #0055a9;
       border-top: 1px solid #0055a9;
       border-right: 1px solid #6eb4d8;
@@ -125,6 +131,8 @@ header {
       background: #5accec;
       background: -webkit-gradient(linear, left top, left bottom, from(#7a22eb), to(#431f70));
       background: -moz-linear-gradient(top, #7a22eb, #431f70);
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#7a22eb,endColorstr=#431f70);
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7a22eb, endColorstr=#431f70)";
       text-shadow: -1px -1px 0 #0d0325;
       border-top: 1px solid #0d0325;
       -webkit-border-radius: 0 0 12px 0;
